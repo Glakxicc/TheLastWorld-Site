@@ -206,6 +206,7 @@ video {
   position: relative;
   top: 4rem;
   width: 700px;
+  max-height: 90%;
   border: 2px solid;
   border-radius: 30px;
 }
@@ -229,4 +230,324 @@ footer {
 
 .credit {
   font-size: 13px;
+}
+
+@media screen and (max-width: 1598px) and (min-width: 922px) {
+  article.leftSide {
+    max-width: 40%;
+    max-height: 90%;
+  }
+  article.rightSide {
+    max-width: 40%;
+    max-height: 90%;
+  }
+  hr.dividerH1AndP {
+    max-width: 90%;
+  }
+
+  #mainContent > article.leftSide > a {
+    position: absolute;
+    text-decoration: none;
+    color: #ffffff;
+    top: 6.8rem;
+    left: 400px;
+    max-width: 90%;
+    font-size: 16px;
+  }
+
+  #mainContent > article.leftSide > a:hover {
+    color: #ff4242;
+    text-decoration: underline;
+  }
+
+  hr.dividerH2AndP {
+    position: absolute;
+    top: 7.7rem;
+    border: 2px solid #fff;
+    max-width: 550px;
+  }
+
+  .loreText {
+    position: relative;
+    margin: 0;
+    top: 0;
+    bottom: 2rem;
+    font-weight: lighter;
+    max-width: 120%;
+    font-size: 16px;
+  }
+
+  video {
+    max-width: 90%;
+    max-height: 90%;
+  }
+
+  .footerBox {
+    position: fixed;
+    /* display: flex;
+    justify-content: right;
+    align-items: center; */
+    border-radius: 6px;
+    background-color: #151515;
+    right: 2rem;
+    padding: 0px 5px 0px 10px;
+    bottom: 1rem;
+    z-index: 2;
+  }
+
+  footer {
+    width: 37rem;
+  }
+
+  hr.dividerFooter {
+    position: fixed;
+    right: 2rem;
+    bottom: 0px;
+    border: 2px solid #fff;
+    max-width: 400px;
+  }
+
+  .credit {
+    display: flex;
+    justify-content: right;
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 922px) {
+  article.leftSide {
+    position: relative;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+  }
+
+  article.rightSide {
+    position: relative;
+    right: 0;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    text-align: right;
+    gap: 1rem;
+  }
+
+  /* Header Styles */
+
+  header {
+    position: relative;
+    z-index: 100;
+    padding: 1rem 3rem 1rem 3rem;
+    margin: -0.5rem -0.5rem 0rem -0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #242424;
+    -webkit-box-shadow: 1px 5px 3px rgba(0, 0, 0, 0.503);
+    box-shadow: 0px 12px 15px 3px rgba(0, 0, 0, 0.503);
+  }
+
+  header a.logo,
+  .navBar > .navItem {
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.48);
+  }
+
+  a.logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+  }
+  .navBar {
+    display: flex;
+    gap: 2rem;
+  }
+  .navBar .navItem {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+
+  .navBar > .active {
+    color: #ff4242;
+    text-decoration: none;
+  }
+
+  .navBar > .navItem:hover {
+    color: #ff4242;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+  }
+
+  /* HeroSection Content Styles */
+
+  section#heroSection {
+    position: relative;
+    z-index: 1;
+    margin: 0rem -0.5rem 0rem -0.5rem;
+    height: 40vh;
+  }
+
+  section#heroSection > .background-image {
+    position: absolute;
+    z-index: -2;
+    display: block;
+    background-image: url("./assets/images/home-background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+  }
+
+  #heroSection > article.leftSide > h1 {
+    font-size: 64px;
+    font-weight: lighter;
+    margin: 7rem 0rem 0rem 0rem;
+  }
+
+  hr.dividerH1AndP {
+    position: absolute;
+    top: 11.5rem;
+    border: 1px solid #fff;
+    width: 650px;
+  }
+
+  #heroSection > article.leftSide > p {
+    font-size: 24px;
+    margin: 0;
+  }
+
+  .playerInfo {
+    position: inherit;
+    right: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(30, 30, 30, 0.593);
+    border-radius: 23px;
+    margin: 0rem 0% 0rem 0rem;
+    width: 520px;
+    height: 80px;
+  }
+
+  .playerInfo,
+  .playerInfo > .imgZone {
+    margin: 1rem;
+  }
+
+  .playerInfo > .playerText {
+    font-weight: lighter;
+    width: 100%;
+    font-size: 32px;
+  }
+  .playerInfo > .imgZone {
+    position: relative;
+    display: flex;
+    z-index: 3;
+    gap: 1rem;
+    top: 0;
+    right: 1rem;
+  }
+
+  .imgZone > img {
+    width: 53px;
+    height: 53px;
+  }
+
+  hr.divider {
+    position: absolute;
+    border: 2px solid #ffffff;
+    width: 100%;
+    margin: 0rem 0rem 0rem 0rem;
+  }
+
+  /* Main Content Styles */
+
+  #mainContent {
+    position: relative;
+    z-index: 2;
+    margin: 0rem 0rem 0rem 0rem;
+    height: 50vh;
+    left: 3%;
+  }
+
+  #mainContent > article.leftSide > h2 {
+    font-size: 54px;
+  }
+
+  #mainContent > article.leftSide > a {
+    position: absolute;
+    text-decoration: none;
+    color: #ffffff;
+    top: 6.8rem;
+    left: 400px;
+    width: 9.3rem;
+    font-size: 16px;
+  }
+
+  #mainContent > article.leftSide > a:hover {
+    color: #ff4242;
+    text-decoration: underline;
+  }
+
+  hr.dividerH2AndP {
+    position: absolute;
+    top: 7.7rem;
+    border: 2px solid #fff;
+    width: 550px;
+  }
+
+  .loreText {
+    position: relative;
+    top: 0;
+    font-weight: lighter;
+    width: 90%;
+    font-size: 16px;
+  }
+
+  video {
+    position: relative;
+    top: 4rem;
+    width: 700px;
+    border: 2px solid;
+    border-radius: 30px;
+  }
+
+  /* Footer Styles */
+
+  footer {
+    position: fixed;
+    width: 500px;
+    padding: 0rem 1rem 0rem 1rem;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    border-radius: 6px;
+    background-color: #151515;
+    z-index: 10;
+    left: 0;
+    bottom: 0;
+    height: 6.5vh;
+    margin-left: 3rem;
+  }
+
+  hr.dividerFooter {
+    position: fixed;
+    bottom: 40px;
+    border: 2px solid #fff;
+    width: 30rem;
+  }
+
+  .credit {
+    font-size: 13px;
+  }
 }
