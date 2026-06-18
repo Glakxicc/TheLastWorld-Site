@@ -4,51 +4,54 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TheLastWorld - Accueil</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <header>
+      <nav class="navBar">
+        <a href="#home" class="navItem active">Accueil</a>
+        <a href="#actus" class="navItem">Actus - DevLogs</a>
+        <a href="#lore" class="navItem">Lore</a>
+        <a href="#joinus" class="navItem">Nous rejoindre</a>
+      </nav>
+      <a class="logo">TheLastWorld</a>
+    </header>
     <section id="heroSection">
-      <header>
-        <nav class="nav">
-          <a class="nav-link" href="index.html">Accueil</a>
-          <a class="nav-link" href="news.html">Actus - DevLogs</a>
-          <a class="nav-link" href="lore.html">Lore</a>
-          <a class="nav-link" href="join.html">Nous Rejoindre</a>
-        </nav>
-        <a class="logo">TheLastWorld</a>
-      </header>
+      <img
+        src="../assets/images/home-background.png"
+        alt="Image de fond angoissante"
+        class="backgroundHeroSection"
+      />
       <article class="leftSide">
-        <h1>Survivre à tout prix</h1>
+        <h1>Survive à tout prix</h1>
         <hr />
         <p>Serveur Roleplay Strict & Immersion Totale</p>
       </article>
       <article class="rightSide">
-        <h2>Joueur connecté : 50/200 🟢</h2>
-        <a href="join.html" class="joinButton">Rejoindre le serveur</a>
-        <img
-          src="https://img.icons8.com/?size=100&id=2mIgusGquJFz&format=png&color=000000"
-          alt="Icône discord"
-          class="discordIcon"
-        />
-        <img
-          src="https://img.icons8.com/?size=100&id=19318&format=png&color=000000"
-          alt="Icône YouTube"
-          class="youtubeIcon"
-        />
+        <div class="playerInfo">
+          <h2 class="playerText"></h2>
+          <img
+            src="https://img.icons8.com/?size=100&id=2mIgusGquJFz&format=png&color=000000"
+            alt="discordIcon"
+            class="discordIcon"
+          />
+          <img
+            src="https://img.icons8.com/?size=100&id=19318&format=png&color=000000"
+            alt="youtubeIcon"
+            class="youtubeIcon"
+          />
+        </div>
       </article>
-      <img
-        src="assets/images/home-background.png"
-        alt="Image de survie post-apocalyptique"
-      />
     </section>
     <hr />
     <section id="mainContent">
       <article class="leftSide">
-        <h1>Synopsis</h1>
-        <a href="lore.html">Découvrir plus ...</a>
+        <h2>Synopsis</h2>
         <hr />
+        <a href="#lore">Découvrir plus ...</a>
         <p>
           Il y a 21 ans, le 12 juin 2013, un virus expérimental créé pour
-          soigner les maladies mentales, s'est échappé d'un laboratoire
+          soigner les maladie mentale, s'est échappé d'un laboratoire
           gouvernemental. Il a muté et s'est propagé rapidement, transformant la
           majorité de la population en monstre pâle, ou qu' il ne leur reste
           qu’un instinct animal dans une quête éternelle de chair fraîche. Ce
@@ -61,10 +64,11 @@
         </p>
       </article>
       <article class="rightSide">
-        <video controls autoplay muted loop>
-          <source src="assets/videos/Last-World.mp4" type="video/mp4" />
-          Votre navigateur ne supporte pas la vidéo.
-        </video>
+        <video
+          class="mainVideo"
+          src="../assets/videos/Last-World.mp4"
+          controls
+        ></video>
       </article>
     </section>
   </body>
