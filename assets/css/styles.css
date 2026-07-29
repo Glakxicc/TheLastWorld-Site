@@ -400,14 +400,3 @@ footer {
 .notif-container-2 .news-item a {
   margin-right: 32.5rem;
 }
-
-@media (max-width: 768px) {
-  main {
-    flex-direction: column;
-  }
-
-  .main-left,
-  .video-zone {
-    max-width: 100%;
-  }
-}
