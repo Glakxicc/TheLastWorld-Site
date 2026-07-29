@@ -28,26 +28,14 @@ address {
 }
 
 .navbar {
+  z-index: 2;
   display: flex;
   margin: 0 0 0 0;
   flex-direction: row-reverse;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   align-items: center;
   justify-content: space-between;
-  height: 7vh;
-
-  background-color: #242424;
-  -webkit-filter: drop-shadow(0px 12px 6px rgb(0, 0, 0));
-  filter: drop-shadow(0px 12px 6px rgb(0, 0, 0));
-}
-
-.navbar-hero {
-  display: flex;
-  margin: 0 0 0 0;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  height: 7vh;
+  height: 4rem;
 
   background-color: #242424;
   -webkit-filter: drop-shadow(0px 12px 6px rgb(0, 0, 0));
@@ -93,7 +81,16 @@ address {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  height: 35vh;
+  height: 20rem;
+  color: #fff;
+  overflow: hidden;
+  z-index: 1;
+}
+
+#hero-lore {
+  position: relative;
+  margin: 0;
+  height: 15rem;
   color: #fff;
   overflow: hidden;
   z-index: 1;
@@ -123,15 +120,6 @@ address {
   -webkit-filter: blur(6px);
   filter: blur(6px);
   background: url("../images/actus-background.png") center/cover no-repeat;
-}
-
-#hero-lore {
-  position: relative;
-  margin: 0;
-  height: 20vh;
-  color: #fff;
-  overflow: hidden;
-  z-index: 1;
 }
 
 #hero-lore::before {
@@ -232,7 +220,7 @@ address {
 
 main {
   display: flex;
-  flex-flow: row nowrap;
+  position: relative;
   align-items: flex-start;
   justify-content: space-between;
   gap: 1rem;
@@ -241,6 +229,7 @@ main {
 }
 
 .main-lore {
+  position: relative;
   display: flex;
   flex-flow: column;
 }
