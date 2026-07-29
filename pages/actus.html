@@ -9,6 +9,8 @@
       href="../assets/favicon/logo-noback.ico"
       type="image/x-icon" />
     <link rel="stylesheet" href="../assets/css/styles.css" />
+    <script src="../assets/js/index.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/gh/leonardosnt/mc-player-counter/dist/mc-player-counter.min.js"></script>
   </head>
   <body>
     <nav class="navbar">
@@ -27,8 +29,14 @@
       </div>
       <div class="hero-right">
         <div class="container">
-          <span id="player-count">Joueur connecté : 20 / 200</span>
-          <span aria-hidden="true">🟢</span>
+          <p id="player-count">
+            Joueur connecté :
+            <span
+              data-playercounter-ip="45.140.164.183:25645"
+              data-playercounter-format="{online} / {max}"></span>
+            <span aria-hidden="true">🟢</span>
+          </p>
+
           <div class="social-container">
             <a
               rel="noopener"
