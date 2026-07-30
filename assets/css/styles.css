@@ -81,7 +81,7 @@ address {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  height: 20rem;
+  height: 24rem;
   color: #fff;
   overflow: hidden;
   z-index: 1;
@@ -178,29 +178,47 @@ address {
 }
 
 .hero-right {
-  margin-left: auto;
+  margin: 4rem;
   display: flex;
+  flex-flow: column wrap;
   font-size: 32px;
+  justify-content: flex-end;
 }
 
-.hero-right .container {
-  margin-right: 4rem;
+.hero-right > .container {
+  display: flex;
+  border-radius: 23px;
+  justify-content: center;
+  background-color: #303030c4;
+  width: 720px;
+  height: 90px;
+}
+
+.social-container-lore {
+  position: absolute;
+  right: 4rem;
+  margin: 2rem 0 auto 0;
   display: flex;
   flex-flow: row wrap;
-  align-items: center;
-  justify-content: center;
-  border-radius: 23px;
-  background-color: #303030c4;
-  width: 664px;
-  height: 105px;
+  gap: 0.5rem;
 }
 
 .social-container {
+  position: absolute;
+  margin: 4rem 0 auto 35rem;
   display: flex;
   flex-flow: row wrap;
-  margin: auto 0 0 auto;
-  padding: 0 2.5rem 0 0;
   gap: 0.5rem;
+}
+
+.social-container-lore a > img {
+  width: 70px;
+  transition: ease-in-out 0.2s;
+}
+
+.social-container-lore a > img:hover {
+  width: 80px;
+  transition: ease-in-out 0.2s;
 }
 
 .social-container a > img {
@@ -217,10 +235,7 @@ address {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
-  margin-bottom: 0;
-  margin-left: 5rem;
-  margin-right: 5rem;
+  gap: 0.5rem;
 }
 
 .hero-main-separator {
